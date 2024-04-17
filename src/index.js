@@ -8,20 +8,20 @@ import Home from './pages/Home/';
 import About from './pages/About/';
 import FicheLogement from './pages/FicheLogement/';
 import Error from './pages/Error/';
+import KasaHeader from "./components/KasaHeader";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+        <KasaHeader/>
             <Routes>
-                {/* <Route path="/" element={<App />} /> */}
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logement/*" element={<FicheLogement />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<Error />} />
-
             </Routes>
     </Router>
   </React.StrictMode>

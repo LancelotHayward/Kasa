@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+header > img {
+    width: 16vw;
+}
+header nav > *{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}

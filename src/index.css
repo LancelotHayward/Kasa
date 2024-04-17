@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root {
+    font-family: 'Montserrat';
+}
+#root > * {
+    margin-inline: 100px;
+}
+@media screen and (max-width: 479px) {
+    #root > * {
+        margin-inline: 10px;
+    }
+}
