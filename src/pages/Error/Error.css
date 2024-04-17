@@ -1,0 +1,16 @@
+main {
+    text-align: center;
+}
+main p {
+    color: #FF6060;
+}
+main p:nth-child(1) {
+    font-size: 288px;
+    margin: 0;
+}
+main p:nth-child(2) {
+    font-size: 36px;
+}
+main a {
+    color: black;
+}
