@@ -9,6 +9,8 @@ import About from './pages/About/';
 import FicheLogement from './pages/FicheLogement/';
 import Error from './pages/Error/';
 import KasaHeader from "./components/KasaHeader";
+import KasaFooter from "./components/KasaFooter";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,13 +18,14 @@ root.render(
   <React.StrictMode>
     <Router>
         <KasaHeader/>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/logement/*" element={<FicheLogement />} />
-                <Route path="/about" element={<About />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/logement/*" element={<FicheLogement />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Error />} />
+        </Routes>
+        <KasaFooter/>
     </Router>
   </React.StrictMode>
 );

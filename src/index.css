@@ -22,3 +22,6 @@ code {
         margin-inline: 10px;
     }
 }
+#root > footer {
+    margin-inline: unset;
+}
