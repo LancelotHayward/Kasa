@@ -1,6 +1,8 @@
+import Slogan from "../../components/Slogan";
+
 function Home() {
     return (
-        <h1>Boop</h1>
+        <Slogan/>
     )
 }
 

@@ -25,7 +25,7 @@ root.render(
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Error />} />
         </Routes>
-        <KasaFooter/>
+        {/* <KasaFooter/> */}
     </Router>
   </React.StrictMode>
 );
