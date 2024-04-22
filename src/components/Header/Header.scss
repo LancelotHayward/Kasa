@@ -1,13 +1,39 @@
+$mobile-max: 800px;
+
 header {
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-}
-header > img {
-    width: 16vw;
-}
-header nav > *{
-    margin-left: 40px;
-    text-decoration: none;
-    color: black;
-}
+    align-items: center;
+    margin-block: 45px;
+    @media screen and (max-width: $mobile-max) {
+        margin-block: 20px;
+    }
+
+    img {
+        @media screen and (max-width: $mobile-max) {
+            width: 145px;
+        }
+    }
+    nav {
+        display: flex;
+        gap: 60px;
+    
+        @media screen and (max-width: $mobile-max) {
+            gap: 40px;
+        }
+
+        a {
+            color: black;
+            font-size: 24px;
+        
+            &:not(:hover) {
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: $mobile-max) {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+} 
