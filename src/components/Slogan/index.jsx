@@ -1,4 +1,4 @@
-import "./Slogan.css"
+import "./Slogan.scss"
 
 function Slogan() {
     return (
