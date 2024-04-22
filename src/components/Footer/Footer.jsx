@@ -1,6 +1,6 @@
-import "./KasaFooter.css"
+import "./Footer.scss"
 
-function KasaHeader() {
+function Footer() {
     return (
         <footer>
             <img src="kasa-footer.png" alt="Kasa"/>
@@ -8,4 +8,4 @@ function KasaHeader() {
         </footer>
     )
 }
-export default KasaHeader
+export default Footer

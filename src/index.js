@@ -3,26 +3,26 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/";
-import About from "./pages/About/";
-import FicheLogement from "./pages/FicheLogement/";
-import Error from "./pages/Error/";
-import KasaHeader from "./components/KasaHeader";
-import KasaFooter from "./components/KasaFooter";
+import Home from "./pages/Home/Home.jsx";
+import About from "./pages/About/About.jsx";
+import FicheLogement from "./pages/FicheLogement/FicheLogement.jsx";
+import Error404 from "./pages/Error404/Error404.jsx";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <Router>
-            <KasaHeader />
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/logement/*" element={<FicheLogement />} />
                 <Route path="/about" element={<About />} />
-                <Route path="*" element={<Error />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
-            {/* <KasaFooter/> */}
+            <Footer />
         </Router>
     </React.StrictMode>,
 );

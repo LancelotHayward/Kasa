@@ -1,4 +1,4 @@
-import "./KasaHeader.css"
+import "./Header.scss"
 import { Link } from 'react-router-dom'
 
 function KasaHeader() {

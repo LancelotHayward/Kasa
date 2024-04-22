@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import "./Error.css"
+import "./Error404.scss"
 
-function Error() {
+function Error404() {
     return (
         <main>
             <p>404</p>
@@ -11,4 +11,4 @@ function Error() {
     )
 }
 
-export default Error
+export default Error404

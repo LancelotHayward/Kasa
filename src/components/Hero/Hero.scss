@@ -1,10 +1,10 @@
-#slogan {
+#hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/slogan.png");
     background-position-y: center;
     border-radius: 25px;
     padding-block: 1vw;
 }
-#slogan p {
+#hero p {
     font-size: 48px;
     font-weight: bold;
     color: white;
@@ -12,7 +12,7 @@
     filter: drop-shadow(0px 4px 4px black);
 }
 @media screen and (max-width: 479px) {
-    #slogan p {
+    #hero p {
         font-size: 24px;
     }
 }
