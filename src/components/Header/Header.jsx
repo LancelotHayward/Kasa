@@ -1,7 +1,7 @@
 import "./Header.scss"
 import { Link } from 'react-router-dom'
 
-function KasaHeader() {
+function Header() {
     return (
         <header>
             <img src="kasa-logo.png" alt="Kasa"/>
@@ -12,4 +12,4 @@ function KasaHeader() {
         </header>
     )
 }
-export default KasaHeader
+export default Header
