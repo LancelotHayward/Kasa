@@ -8,16 +8,6 @@ $mobile-max: 800px;
     gap: $spacing;
     margin-block: $spacing;
 
-    article {
-        height: 255px;
-        background-color: green;
-
-        @media screen and (min-width: calc($mobile-max + 1px)) {
-            width: 340px;
-            height: 340px;
-        }
-    }
-
     @media screen and (min-width: calc($mobile-max + 1px)) {
         $spacing: 50px;
         gap: $spacing;

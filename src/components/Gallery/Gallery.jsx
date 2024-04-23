@@ -1,27 +1,11 @@
 import "./Gallery.scss"
-import { Link } from 'react-router-dom'
+import Rental from "../Rental/Rental.jsx";
 
 function Gallery() {
     return (
         <section id="Gallery">
-            <article>
-                <p>Titre de la location</p>
-            </article>
-            <article>
-                <p>Titre de la location</p>
-            </article>
-            <article>
-                <p>Titre de la location</p>
-            </article>
-            <article>
-                <p>Titre de la location</p>
-            </article>
-            <article>
-                <p>Titre de la location</p>
-            </article>
-            <article>
-                <p>Titre de la location</p>
-            </article>
+            <Rental link="" title="Titre de la location" background=""/>
+            <Rental link="" title="Titre de la location" background=""/>
         </section>
     )
 }

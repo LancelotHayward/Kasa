@@ -1,0 +1,22 @@
+$mobile-max: 800px;
+
+.rental {
+    height: 255px;
+    background-color: green;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (min-width: calc($mobile-max + 1px)) {
+        width: 340px;
+        height: 340px;
+    }
+
+    a {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-wrap: wrap;
+        text-decoration: none;
+    }
+}
