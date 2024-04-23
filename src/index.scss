@@ -1,3 +1,5 @@
+$mobile-max: 800px;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,17 +13,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 #root {
     font-family: 'Montserrat';
-}
-#root > * {
-    margin-inline: 100px;
-}
-@media screen and (max-width: 479px) {
-    #root > * {
-        margin-inline: 10px;
-    }
-}
-#root > footer {
-    margin-inline: unset;
+
+    & > *:not(footer) {
+      margin-inline: 100px;
+
+      @media screen and (max-width: $mobile-max) {
+        margin-inline: 20px;
+      }
+  }
 }
