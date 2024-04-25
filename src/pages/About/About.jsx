@@ -1,6 +1,15 @@
+import "./About.scss"
+import Dropdown from "../../components/Dropdown/Dropdown.jsx"
+
 function About() {
     return (
-        <h1>Boop</h1>
+        <main id="about">
+            <img src="" alt=""/>
+            <Dropdown title="" text=""/>
+            <Dropdown title="" text=""/>
+            <Dropdown title="" text=""/>
+            <Dropdown title="" text=""/>
+        </main>
     )
 }
 

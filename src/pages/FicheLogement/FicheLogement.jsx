@@ -1,3 +1,4 @@
+import "./FicheLogement.scss"
 import Tags from "../../components/Tags/Tags.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
 import Dropdown from "../../components/Dropdown/Dropdown.jsx"
