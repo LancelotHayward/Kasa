@@ -6,6 +6,10 @@ function Gallery() {
         <section id="Gallery">
             <Rental link="" title="Titre de la location" background=""/>
             <Rental link="" title="Titre de la location" background=""/>
+            <Rental link="" title="Titre de la location" background=""/>
+            <Rental link="" title="Titre de la location" background=""/>
+            <Rental link="" title="Titre de la location" background=""/>
+            <Rental link="" title="Titre de la location" background=""/>
         </section>
     )
 }
