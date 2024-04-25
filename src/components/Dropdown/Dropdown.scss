@@ -1,6 +1,16 @@
 .dropdown {
     background-color: #FF6060;
-    p {
+    border-radius: 5px;
+    color: white;
+    div {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            align-self: center;
+        }
+    }
+    p:not(.open) {
         display: none;
     }
 }
