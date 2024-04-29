@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Rental({link, title, background}) {
     return (
-        <article class="rental">
+        <article className="rental">
             <Link to={link}>{title}</Link>
             <img src={background} alt={title}/>
         </article>

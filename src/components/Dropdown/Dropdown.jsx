@@ -13,7 +13,7 @@ function Dropdown({title, text}) {
     }
 
     return (
-        <article class="dropdown" ref={dropdown}>
+        <article className="dropdown" ref={dropdown}>
             <div>
                 <h2>{title}</h2>
                 <img src="dropdown-arrow.png" alt="Lire plus..."/>

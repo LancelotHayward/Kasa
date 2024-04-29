@@ -1,15 +1,23 @@
+import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import rentals from "../../data/logements.js"
 import "./FicheLogement.scss"
 import Tags from "../../components/Tags/Tags.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
 import Dropdown from "../../components/Dropdown/Dropdown.jsx"
 
 function FicheLogement() {
+    const params = useParams()
+    const navigate = useNavigate()
+    if (!rentals.some(rental => rental.id === params.id)) {
+        return navigate("/error")
+    }
     return (
         <main>
             <img src="" alt=""/>
             <section>
                 <div>
-                    <h1>Titre</h1>
+                    <h1>{params.id}</h1>
                     <p>Paris</p>
                     <Tags/>
                 </div>
