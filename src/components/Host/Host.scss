@@ -1,0 +1,17 @@
+$mobile-max: 800px;
+$red: #FF6060;
+
+#host {
+    display: flex;
+
+    p {
+        display: table-caption;
+        color: $red;
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 100px;
+    }
+    img {
+        border-radius: 100%;
+    }
+}

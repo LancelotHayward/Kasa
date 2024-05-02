@@ -24,7 +24,7 @@ function FicheLogement() {
             <section id="meta">
                 <div>
                     <h1>{rental.title}</h1>
-                    <p>{rental.location}</p>
+                    <p id="location">{rental.location}</p>
                     <Tags list={rental.tags}/>
                 </div>
                 <div>
