@@ -1,12 +1,15 @@
+$border-radius: 10px;
+
 .dropdown {
-    background-color: #FF6060;
-    border-radius: 10px;
-    color: white;
     width: 100%;
     div {
+        background-color: #FF6060;
+        border-radius: $border-radius;
+        color: white;
         display: flex;
         justify-content: space-between;
         padding: 0 20px 0 10px;
+
         h2 {
             margin-block: 15px;
         }
@@ -14,7 +17,17 @@
             align-self: center;
         }
     }
-    ul:not(.open) {
-        display: none;
+    ul {
+        list-style: none;
+        background-color: #F6F6F6;
+        margin: 0;
+        padding-inline: 20px;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        &:not(.open) {
+            display: none;
+        }
     }
+    
 }

@@ -2,7 +2,8 @@ $mobile-max: 800px;
 
 .rental {
     height: 255px;
-    background-color: green;
+    border-radius: 10px;
+    overflow: hidden;
     padding: 20px;
     display: flex;
     align-items: flex-end;
