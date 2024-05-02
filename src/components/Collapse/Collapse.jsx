@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import "./Dropdown.scss"
+import "./Collapse.scss"
 
-function Dropdown({title, text}) {
+function Collapse({title, text}) {
     //Event listener to open and close
         const dropdown = useRef(null)
         useEffect(() => {
@@ -21,7 +21,7 @@ function Dropdown({title, text}) {
         <article className="dropdown" ref={dropdown}>
             <div>
                 <h2>{title}</h2>
-                <img src="dropdown-arrow.png" alt="Lire plus..."/>
+                <img src="../dropdown-arrow.png" alt="Lire plus..."/>
             </div>
             <ul id={title}>{
                 text.map(item => {
@@ -32,4 +32,4 @@ function Dropdown({title, text}) {
     )
 }
 
-export default Dropdown
+export default Collapse

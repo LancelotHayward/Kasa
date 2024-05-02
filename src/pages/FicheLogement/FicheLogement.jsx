@@ -5,7 +5,7 @@ import "./FicheLogement.scss"
 import Tags from "../../components/Tags/Tags.jsx"
 import Host from "../../components/Host/Host.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
-import Dropdown from "../../components/Dropdown/Dropdown.jsx"
+import Collapse from "../../components/Collapse/Collapse.jsx"
 
 function FicheLogement() {
     const params = useParams()
@@ -30,8 +30,8 @@ function FicheLogement() {
                 </div>
             </section>
             <section id="dropdowns">
-                <Dropdown title="Description" text={rental.description}/>
-                <Dropdown title="Équipements" text={rental.equipments}/>
+                <Collapse title="Description" text={rental.description}/>
+                <Collapse title="Équipements" text={rental.equipments}/>
             </section>
         </main>
     )
