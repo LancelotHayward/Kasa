@@ -16,6 +16,7 @@ function Dropdown({title, text}) {
         if (text instanceof Array === false) {
             text = [text]
         }
+    //Component
     return (
         <article className="dropdown" ref={dropdown}>
             <div>
