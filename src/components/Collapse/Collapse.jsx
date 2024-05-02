@@ -18,12 +18,12 @@ function Collapse({title, text}) {
         }
     //Component
     return (
-        <article className="dropdown" ref={dropdown}>
+        <article className="dropdown" ref={dropdown} id={title}>
             <div>
                 <h2>{title}</h2>
                 <img src="../dropdown-arrow.png" alt="Lire plus..."/>
             </div>
-            <ul id={title}>{
+            <ul>{
                 text.map(item => {
                     return (<li>{item}</li>)
                 })
