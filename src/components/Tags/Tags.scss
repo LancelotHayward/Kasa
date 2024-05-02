@@ -1,0 +1,12 @@
+$red: #FF6060;
+
+.tags {
+    display: flex;
+    gap: 25px;
+    p {
+        background-color: $red;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 25px;
+    }
+}
