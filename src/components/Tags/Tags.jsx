@@ -1,9 +1,11 @@
 import "./Tags.scss"
 
-function Tags({names}) {
+function Tags({list}) {
     return (
-        <div>
-            <p>{names}</p>
+        <div className="tags">
+            {list.map(tag => {
+                return (<p>{tag}</p>)
+            })}
         </div>
     )
 }

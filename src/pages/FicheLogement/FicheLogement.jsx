@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import rentals from "../../data/logements.js"
 import "./FicheLogement.scss"
 import Tags from "../../components/Tags/Tags.jsx"
+import Host from "../../components/Host/Host.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
 import Dropdown from "../../components/Dropdown/Dropdown.jsx"
 
@@ -12,26 +13,25 @@ function FicheLogement() {
     if (!rentals.some(rental => rental.id === params.id)) {
         return navigate("/error")
     }
+    const rental = rentals.find(rental => rental.id === params.id)
+
     return (
         <main>
-            <img src="" alt=""/>
+            <img src={rental.pictures[0]} alt={rental.title}/>
             <section>
                 <div>
-                    <h1>{params.id}</h1>
-                    <p>Paris</p>
-                    <Tags/>
+                    <h1>{rental.title}</h1>
+                    <p>{rental.location}</p>
+                    <Tags list={rental.tags}/>
                 </div>
                 <div>
-                    <div>
-                        <p>Name</p>
-                        <img src="" alt=""/>
-                    </div>
-                    <Stars/>
+                    <Host name={rental.host.name} picture={rental.host.picture}/>
+                    <Stars rating={rental.rating}/>
                 </div>
             </section>
             <section>
-                <Dropdown title="Description" text="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). "/>
-                <Dropdown title="Équipements" text="Secret"/>
+                <Dropdown title="Description" text={rental.description}/>
+                <Dropdown title="Équipements" text={rental.equipments}/>
             </section>
         </main>
     )
