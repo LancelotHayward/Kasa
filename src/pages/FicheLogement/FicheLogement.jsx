@@ -1,7 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
-import rentals from "../../data/logements.js"
+
+import data_rentals from "../../data/logements.js"
 import "./FicheLogement.scss"
+
+import Gallery from "../../components/Gallery/Gallery.jsx";
 import Tags from "../../components/Tags/Tags.jsx"
 import Host from "../../components/Host/Host.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
@@ -10,14 +13,14 @@ import Collapse from "../../components/Collapse/Collapse.jsx"
 function FicheLogement() {
     const params = useParams()
     const navigate = useNavigate()
-    if (!rentals.some(rental => rental.id === params.id)) {
+    if (!data_rentals.some(rental => rental.id === params.id)) {
         return navigate("/error")
     }
-    const rental = rentals.find(rental => rental.id === params.id)
+    const rental = data_rentals.find(rental => rental.id === params.id)
 
     return (
         <main id="fichelogement">
-            <img src={rental.pictures[0]} alt={rental.title}/>
+            <Gallery pictures={rental.pictures} alt={rental.title}/>
             <section id="meta">
                 <div>
                     <h1>{rental.title}</h1>

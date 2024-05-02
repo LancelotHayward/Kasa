@@ -1,0 +1,21 @@
+$mobile-max: 800px;
+
+#rentals {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    $spacing: 20px;
+    gap: $spacing;
+    margin-block: $spacing;
+
+    @media screen and (min-width: calc($mobile-max + 1px)) {
+        $spacing: 50px;
+        gap: $spacing;
+        padding: $spacing;
+        margin-block: $spacing;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}

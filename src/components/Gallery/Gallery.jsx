@@ -1,13 +1,9 @@
 import "./Gallery.scss"
-import Rental from "../Rental/Rental.jsx";
-import rentals from "../../data/logements.js"
 
-function Gallery() {
+function Gallery({pictures, alt}) {
     return (
         <section id="Gallery">
-            {rentals.map(rental => {
-                return (<Rental id={rental.id} title={rental.title} background={rental.cover}/>)
-            })}
+            
         </section>
     )
 }

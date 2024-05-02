@@ -4,12 +4,7 @@ $red: #FF6060;
 #fichelogement {
     margin-bottom: 30px;
     min-height: 66vh;
-    & > img {
-        width: 100%;
-        height: 35vh;
-        object-fit: cover;
-        border-radius: 25px;
-    }
+    
     section {
         display: flex;
         justify-content: space-between;
