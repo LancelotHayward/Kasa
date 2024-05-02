@@ -1,0 +1,34 @@
+$mobile-max: 800px;
+$red: #FF6060;
+
+#fichelogement {
+    & > img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $mobile-max) {
+            flex-direction: column;
+        }
+    }
+    #meta {
+        h1 {
+            color: $red;
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+    }
+    #dropdowns {
+        gap: 75px;
+    }
+}

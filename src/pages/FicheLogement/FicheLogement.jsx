@@ -16,9 +16,9 @@ function FicheLogement() {
     const rental = rentals.find(rental => rental.id === params.id)
 
     return (
-        <main>
+        <main id="fichelogement">
             <img src={rental.pictures[0]} alt={rental.title}/>
-            <section>
+            <section id="meta">
                 <div>
                     <h1>{rental.title}</h1>
                     <p>{rental.location}</p>
@@ -29,7 +29,7 @@ function FicheLogement() {
                     <Stars rating={rental.rating}/>
                 </div>
             </section>
-            <section>
+            <section id="dropdowns">
                 <Dropdown title="Description" text={rental.description}/>
                 <Dropdown title="Équipements" text={rental.equipments}/>
             </section>

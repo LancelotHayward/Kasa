@@ -1,11 +1,15 @@
 .dropdown {
     background-color: #FF6060;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
+    width: 100%;
     div {
         display: flex;
         justify-content: space-between;
-
+        padding: 0 20px 0 10px;
+        h2 {
+            margin-block: 15px;
+        }
         img {
             align-self: center;
         }
