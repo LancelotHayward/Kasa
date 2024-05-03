@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import "./Collapse.scss"
 
 function Collapse({title, text}) {
