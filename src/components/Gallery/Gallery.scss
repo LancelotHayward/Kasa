@@ -1,6 +1,5 @@
-$mobile-max: 800px;
-
 #Gallery {
+    position: relative;
     .picture {
         width: 100%;
         height: 35vh;
@@ -10,5 +9,15 @@ $mobile-max: 800px;
         &:not(.visible) {
             display: none;
         }
+    }
+    .arrow, #index {
+        position: absolute;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #index {
+        bottom: 5%;
+        left: 50%;
     }
 }
