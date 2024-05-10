@@ -7,7 +7,7 @@ function Header() {
             <img src="../kasa-logo.png" alt="Kasa"/>
             <nav>
                 <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
+                <Link to="/about">À Propos</Link>
             </nav>
         </header>
     )

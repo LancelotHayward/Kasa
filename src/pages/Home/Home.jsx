@@ -1,10 +1,16 @@
+import { useEffect } from 'react'
+
 import data_rentals from "../../data/logements.js"
 import "./Home.scss"
 
-import Hero from "../../components/Hero/Hero.jsx";
-import Rental from "../../components/Rental/Rental.jsx";
+import Hero from "../../components/Hero/Hero.jsx"
+import Rental from "../../components/Rental/Rental.jsx"
 
 function Home() {
+    useEffect(() => {
+        document.title = "Kasa"
+      }, [])
+
     return (
         <main>
             <Hero/>

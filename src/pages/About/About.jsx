@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import "./About.scss"
 import Collapse from "../../components/Collapse/Collapse.jsx"
 
 function About() {
+    useEffect(() => {
+        document.title = "À propos de Kasa"
+      }, [])
     return (
         <main id="about">
             <img src="kalen-emsley-Bkci_8qcdvQ-unsplash 2.png" alt="à propos"/>

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
+import { useEffect } from 'react';
 
 import data_rentals from "../../data/logements.js"
 import "./FicheLogement.scss"
@@ -11,6 +12,10 @@ import Stars from "../../components/Stars/Stars.jsx"
 import Collapse from "../../components/Collapse/Collapse.jsx"
 
 function FicheLogement() {
+    useEffect(() => {
+        document.title = 'Kasa Logement'
+      }, [])
+
     const params = useParams()
     const navigate = useNavigate()
     if (!data_rentals.some(rental => rental.id === params.id)) {
