@@ -13,16 +13,28 @@ $red: #FF6060;
         }
     }
     #meta {
+        margin-top: 25px;
         h1 {
             color: $red;
             font-size: 36px;
             font-weight: 500;
             margin-bottom: 10px;
+            margin-top: 0;
         }
         #location {
             font-size: 18px;
             font-weight: 500;
             margin-top: 0;
+        }
+        #hostrating {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            @media screen and (max-width: $mobile-max) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
         }
     }
     #dropdowns {

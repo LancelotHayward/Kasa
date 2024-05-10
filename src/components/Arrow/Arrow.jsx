@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import "./Arrow.scss"
 
 function Arrow({side, photo, setPhoto, showPicture}) {
@@ -10,6 +10,9 @@ function Arrow({side, photo, setPhoto, showPicture}) {
     const handleClick = (event) => {
         if (side === "right") {
             setPhoto(photo + 1)
+        }
+        else {
+            setPhoto(photo - 1)
         }
         showPicture(photo)
     }

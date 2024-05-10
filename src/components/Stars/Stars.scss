@@ -1,0 +1,8 @@
+#rating {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    .star {
+        max-height: 24px;
+    }
+}

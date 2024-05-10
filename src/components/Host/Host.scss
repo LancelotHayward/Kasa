@@ -10,8 +10,16 @@ $red: #FF6060;
         font-size: 18px;
         font-weight: 500;
         max-width: 100px;
+        text-align: right;
+        margin-right: 10px;
     }
     img {
         border-radius: 100%;
+        width: 5vw;
+        height: 5vw;
+        min-width: 64px;
+        max-width: 128px;
+        min-height: 64px;
+        max-height: 128px;
     }
 }

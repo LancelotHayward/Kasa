@@ -5,16 +5,16 @@ function Stars({rating}) {
     const stars = []
     for (let i=0; i < 5; i++ ) {
         if (i < rating) {
-            stars.push("full")
+            stars.push("../star-full.png")
             continue
         }
-        stars.push("empty")
+        stars.push("../star-empty.png")
     }
     //Component
     return (
         <div id="rating">
             {stars.map(star => {
-                return (<div class={star}></div>)
+                return (<img className="star" alt={rating + " stars"} src={star}/>)
             })}
         </div>
     )

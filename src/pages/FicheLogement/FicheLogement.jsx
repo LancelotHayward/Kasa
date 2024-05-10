@@ -27,7 +27,7 @@ function FicheLogement() {
                     <p id="location">{rental.location}</p>
                     <Tags list={rental.tags}/>
                 </div>
-                <div>
+                <div id="hostrating">
                     <Host name={rental.host.name} picture={rental.host.picture}/>
                     <Stars rating={rental.rating}/>
                 </div>

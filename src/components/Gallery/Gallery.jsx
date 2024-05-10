@@ -8,7 +8,7 @@ function Gallery({pictures, alt}) {
     function showPicture(id) {
         const images = document.getElementsByClassName("picture")
         for (let i = 0; i < images.length; i++){
-                images[i].classList.remove("visible")
+            images[i].classList.remove("visible")
         }
         document.getElementById("rental-" + id).classList.add("visible")
     }
@@ -24,7 +24,7 @@ function Gallery({pictures, alt}) {
                     <img src={picture} alt={alt} id={"rental-" + i} className={class_names}/>
                 )
             })}
-            <div id="index">{photo + 1}/4</div>
+            <div id="index">{photo + 1}/{pictures.length}</div>
             <Arrow side="right" photo={photo} setPhoto={setPhoto} showPicture={showPicture}/>
         </section>
     )

@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <img src="../kasa-footer.png" alt="Kasa"/>
-            <p>© 2020 Kasa. All rights reserved</p>
+            <p>© 2024 Kasa. All rights reserved</p>
         </footer>
     )
 }
