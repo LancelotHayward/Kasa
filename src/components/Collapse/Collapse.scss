@@ -10,28 +10,34 @@ $border-radius: 10px;
         display: flex;
         justify-content: space-between;
         padding: 0 20px 0 10px;
-
+        position:relative;
+        z-index: 1;
         h2 {
             margin-block: 15px;
         }
         img {
+            transition-duration: 0.5s;
             align-self: center;
         }
     }
     ul {
+        transition-duration: 0.5s;
         list-style: none;
         background-color: #F6F6F6;
         margin: 0;
         padding: 20px;
         border-bottom-left-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
+        transform: translateY(0);
+        z-index: 0;
     }
     &:not(.open) {
         ul {
-            display: none;
+            opacity: 0;
+            transform: translateY(-50px) 
         }
         div img {
-            transform: scaleY(-1);
+            transform: rotate(180deg);
         }
     }
 }
