@@ -39,5 +39,10 @@ $red: #FF6060;
     }
     #dropdowns {
         gap: 75px;
+
+        @media screen and (max-width: $mobile-max) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }

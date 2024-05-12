@@ -1,23 +1,28 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import "./Gallery.scss"
-
-import Arrow from "../Arrow/Arrow.jsx"
 
 function Gallery({pictures, alt}) {
     const [photo, setPhoto] = useState(0);
-    function showPicture(id) {
-        const images = document.getElementsByClassName("picture")
-        for (let i = 0; i < images.length; i++){
-            images[i].classList.remove("visible")
+    function showPreviousPicture() {
+        if (photo === 0) {
+            setPhoto(pictures.length - 1)
+            return
         }
-        document.getElementById("rental-" + id).classList.add("visible")
+        setPhoto(photo - 1)
+    }
+    function showNextPicture() {
+        if (photo === pictures.length - 1) {
+            setPhoto(0)
+            return
+        }
+        setPhoto(photo + 1)
     }
     return (
         <section id="Gallery">
-            <Arrow side="left" photo={photo} setPhoto={setPhoto} showPicture={showPicture}/>
+            <img id="left" class="arrow" src="../gallery-arrow.png" alt="Image précédent" onClick={showPreviousPicture}/>
             {pictures.map(function(picture, i){
                 let class_names = "picture"
-                if (i === 0) {
+                if (i === photo) {
                     class_names += " visible"
                 }
                 return (
@@ -25,7 +30,7 @@ function Gallery({pictures, alt}) {
                 )
             })}
             <div id="index">{photo + 1}/{pictures.length}</div>
-            <Arrow side="right" photo={photo} setPhoto={setPhoto} showPicture={showPicture}/>
+            <img id="right" class="arrow" src="../gallery-arrow.png" alt="Image suivant" onClick={showNextPicture}/>
         </section>
     )
 }
