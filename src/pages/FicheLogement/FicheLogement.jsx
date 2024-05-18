@@ -10,19 +10,19 @@ import Tags from "../../components/Tags/Tags.jsx"
 import Host from "../../components/Host/Host.jsx"
 import Stars from "../../components/Stars/Stars.jsx"
 import Collapse from "../../components/Collapse/Collapse.jsx"
+import Error404 from "../../pages/Error404/Error404.jsx"
 
 function FicheLogement() {
+    const params = useParams()
+    const navigate = useNavigate()
+    const rental = data_rentals.find(rental => rental.id === params.id)
     useEffect(() => {
         document.title = 'Kasa Logement'
       }, [])
 
-    const params = useParams()
-    const navigate = useNavigate()
-    if (!data_rentals.some(rental => rental.id === params.id)) {
-        return navigate("/error")
+      if (!rental) {
+        return <Error404/>
     }
-    const rental = data_rentals.find(rental => rental.id === params.id)
-
     return (
         <main id="fichelogement">
             <Gallery pictures={rental.pictures} alt={rental.title}/>

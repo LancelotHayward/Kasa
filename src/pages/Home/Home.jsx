@@ -16,7 +16,7 @@ function Home() {
             <Hero/>
             <section id="rentals">
                 {data_rentals.map(rental => {
-                    return (<Rental id={rental.id} title={rental.title} background={rental.cover}/>)
+                    return (<Rental key={rental.id} id={rental.id} title={rental.title} background={rental.cover}/>)
                 })}
             </section>
         </main>

@@ -4,7 +4,7 @@ function Tags({list}) {
     return (
         <div className="tags">
             {list.map(tag => {
-                return (<p>{tag}</p>)
+                return (<p key={tag}>{tag}</p>)
             })}
         </div>
     )

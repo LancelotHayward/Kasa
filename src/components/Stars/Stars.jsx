@@ -13,8 +13,8 @@ function Stars({rating}) {
     //Component
     return (
         <div id="rating">
-            {stars.map(star => {
-                return (<img className="star" alt={rating + " stars"} src={star}/>)
+            {stars.map(function(star,i) {
+                return (<img key={i} className="star" alt={rating + " stars"} src={star}/>)
             })}
         </div>
     )

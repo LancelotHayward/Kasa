@@ -1,16 +1,21 @@
 #Error404 {
     text-align: center;
+    margin-bottom: 10vh;
 
     p {
         color: #FF6060;
+
         &:nth-child(1) {
             font-size: 288px;
             margin: 0;
+            font-weight: bold;
         }
+
         &:nth-child(2) {
             font-size: 36px;
         }
     }
+
     a {
         color: black;
     }

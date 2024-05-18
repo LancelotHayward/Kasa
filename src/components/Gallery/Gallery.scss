@@ -1,5 +1,8 @@
+$mobile-max: 800px;
+
 #Gallery {
     position: relative;
+
     .picture {
         width: 100%;
         height: 35vh;
@@ -10,14 +13,31 @@
             display: none;
         }
     }
-    .arrow, #index {
+
+    .arrow,
+    #index {
         position: absolute;
         color: white;
         font-size: 18px;
         font-weight: 500;
     }
+
+    .arrow {
+        bottom: 13vh;
+    }
+
+    #left {
+        left: 10px;
+    }
+
+    #right {
+        right: 10px;
+        transform: scaleX(-1);
+    }
+
     #index {
         bottom: 5%;
         left: 50%;
     }
+
 }

@@ -25,7 +25,7 @@ function Collapse({title, text}) {
             </div>
             <ul>{
                 text.map(item => {
-                    return (<li>{item}</li>)
+                    return (<li key={item}>{item}</li>)
                 })
             }</ul>
         </article>
