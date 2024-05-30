@@ -19,7 +19,7 @@ function Gallery({pictures, alt}) {
     }
     return (
         <section id="Gallery">
-            <img id="left" className="arrow" src="../gallery-arrow.png" alt="Précédent" onClick={showPreviousPicture}/>
+            <img id="left" className={"arrow total-" + pictures.length} src="../gallery-arrow.png" alt="Précédent" onClick={showPreviousPicture}/>
             {pictures.map(function(picture, i){
                 let class_names = "picture"
                 if (i === photo) {
@@ -29,8 +29,8 @@ function Gallery({pictures, alt}) {
                     <img key={i} src={picture} alt={alt} id={"rental-" + i} className={class_names}/>
                 )
             })}
-            <div id="index">{photo + 1}/{pictures.length}</div>
-            <img id="right" className="arrow" src="../gallery-arrow.png" alt="Suivant" onClick={showNextPicture}/>
+            <div id="index" className={"total-" + pictures.length}>{photo + 1}/{pictures.length}</div>
+            <img id="right" className={"arrow total-" + pictures.length} src="../gallery-arrow.png" alt="Suivant" onClick={showNextPicture}/>
         </section>
     )
 }

@@ -14,7 +14,6 @@ import Error404 from "../../pages/Error404/Error404.jsx"
 
 function FicheLogement() {
     const params = useParams()
-    const navigate = useNavigate()
     const rental = data_rentals.find(rental => rental.id === params.id)
     useEffect(() => {
         document.title = 'Kasa Logement'

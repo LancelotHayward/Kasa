@@ -38,6 +38,14 @@ $mobile-max: 800px;
     #index {
         bottom: 5%;
         left: 50%;
+
+        @media screen and (max-width: $mobile-max) {
+            display: none;
+        }
+    }
+
+    .total-1 {
+        display: none;
     }
 
 }
